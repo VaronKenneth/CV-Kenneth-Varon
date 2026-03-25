@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Kenneth Alejandro Varón</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --text: #333;
+            --light: #f8f9fa;
+        }
+        * { box-sizing: border-box; }
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            line-height: 1.6; 
+            color: var(--text); 
+            background-color: #e9ecef;
+            margin: 0;
+            padding: 20px;
+        }
+        .cv-card {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            display: grid;
+            grid-template-columns: 30% 70%;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        /* Barra Lateral */
+        .sidebar {
+            background-color: var(--primary);
+            color: white;
+            padding: 30px 20px;
+        }
+        .sidebar h2 { font-size: 1.2rem; border-bottom: 1px solid rgba(255,255,255,0.2); padding-bottom: 10px; margin-top: 30px; }
+        .contact-item { font-size: 0.85rem; margin-bottom: 15px; word-wrap: break-word; }
+        
+        /* Cuerpo Principal */
+        .main-content { padding: 40px; }
+        .header { margin-bottom: 30px; }
+        .header h1 { margin: 0; color: var(--primary); font-size: 2.2rem; text-transform: uppercase; letter-spacing: 1px; }
+        .header p { margin: 5px 0; color: var(--secondary); font-weight: bold; font-size: 1.1rem; }
+        
+        h3 { color: var(--primary); border-bottom: 2px solid var(--secondary); display: inline-block; margin-bottom: 15px; }
+        .section { margin-bottom: 30px; }
+        .skill-item { margin-bottom: 15px; }
+        .skill-title { font-weight: bold; color: #444; display: block; }
+        .skill-desc { font-size: 0.9rem; color: #666; }
+
+        .job { margin-bottom: 20px; }
+        .job-header { display: flex; justify-content: space-between; font-weight: bold; }
+        .job-company { color: var(--secondary); }
+
+        .btn-container { text-align: center; margin-top: 20px; }
+        .btn-print {
+            background: var(--secondary);
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 25px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .btn-print:hover { transform: scale(1.05); }
+
+        @media (max-width: 768px) {
+            .cv-card { grid-template-columns: 100%; }
+            .sidebar { text-align: center; }
+        }
+        @media print {
+            body { background: white; padding: 0; }
+            .cv-card { box-shadow: none; border-radius: 0; width: 100%; max-width: 100%; }
+            .btn-container { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="cv-card">
+    <aside class="sidebar">
+        <div class="contact-item">
+            <strong>Ubicación:</strong><br>Bogotá, Colombia [cite: 9]
+        </div>
+        <div class="contact-item">
+            <strong>Teléfono:</strong><br>+57 322 350 8510 [cite: 10]
+        </div>
+        <div class="contact-item">
+            <strong>Email:</strong><br>varonalejandrok@gmail.com [cite: 11]
+        </div>
+
+        <h2>EDUCACIÓN</h2>
+        <div class="contact-item">
+            <strong>Ingeniería de Sistemas</strong><br>
+            En curso [cite: 63]
+        </div>
+        <div class="contact-item">
+            <strong>Bachiller Técnico</strong><br>
+            Especialidad Comercial [cite: 66]
+        </div>
+
+        <h2>IDIOMAS</h2>
+        <div class="contact-item">Español (Nativo) [cite: 44]</div>
+        <div class="contact-item">Inglés (B2 - Intermedio) [cite: 46]</div>
+    </aside>
+
+    <main class="main-content">
+        <header class="header">
+            <h1>Kenneth Varón</h1>
+            <p>Auxiliar de Soporte Operativo y Oficios Varios</p>
+        </header>
+
+        <section class="section">
+            <h3>Perfil Profesional</h3>
+            <p>Estudiante de Ingeniería comprometido con la excelencia operativa y el servicio eficiente[cite: 16]. Poseo una fuerte ética de trabajo, puntualidad rigurosa y la capacidad de adaptarme rápidamente a entornos de alto flujo[cite: 59]. Busco aportar mi energía y proactividad en un rol que requiera organización, dinamismo y un alto sentido de la responsabilidad durante fines de semana y festivos.</p>
+        </section>
+
+        <section class="section">
+            <h3>Cualidades Destacadas</h3>
+            
+            <div class="skill-item">
+                <span class="skill-title">Resolución de Problemas [cite: 54]</span>
+                <span class="skill-desc">Capacidad para identificar necesidades inmediatas y actuar de forma autónoma para mantener la fluidez del servicio.</span>
+            </div>
+
+            <div class="skill-item">
+                <span class="skill-title">Trabajo bajo Presión y en Equipo [cite: 52]</span>
+                <span class="skill-desc">Habilidad para colaborar con compañeros en momentos de alta demanda, manteniendo una actitud amable y colaborativa.</span>
+            </div>
+
+            <div class="skill-item">
+                <span class="skill-title">Aprendizaje Ágil [cite: 56]</span>
+                <span class="skill-desc">Facilidad para dominar nuevos procesos, protocolos de limpieza o manejo de equipos en poco tiempo.</span>
+            </div>
+
+            <div class="skill-item">
+                <span class="skill-title">Comunicación Efectiva [cite: 57]</span>
+                <span class="skill-desc">Trato respetuoso con clientes y superiores, asegurando que las instrucciones se sigan con precisión.</span>
+            </div>
+        </section>
+
+        <section class="section">
+            <h3>Experiencia Laboral</h3>
+            <div class="job">
+                <div class="job-header">
+                    <span>Asistente Operativo (Freelance)</span>
+                    <span class="date">2025 - Actual</span>
+                </div>
+                <div class="job-company">Trabajo Remoto / Independiente [cite: 20]</div>
+                <ul>
+                    <li>Gestión de tareas múltiples bajo cronogramas estrictos[cite: 22].</li>
+                    <li>Mantenimiento y organización operativa de proyectos[cite: 23].</li>
+                    <li>Resolución de incidencias técnicas y operativas de forma proactiva[cite: 54].</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+</div>
+
+<div class="btn-container">
+    <button class="btn-print" onclick="window.print()">Generar PDF para enviar</button>
+</div>
+
+</body>
+</html>
